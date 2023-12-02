@@ -8,8 +8,6 @@ Viss Fashions is a stylish login/sign-up page featuring a responsive design and 
 - [Features](#features)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Overview
 
