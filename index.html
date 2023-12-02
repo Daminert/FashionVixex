@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Document metadata -->
+    <meta charset="UTF-8">
+    <title>Viss Fashions</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- External dependencies -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation section -->
+    <nav class="container flex flex-col md:flex-row items-center justify-between gap-4 p-5 mx-auto">
+        <div>
+            <!-- Brand/logo -->
+            <h1 class="text-xl">Viss Fashion</h1>
+        </div>
+
+        <!-- Hamburger menu for small screens -->
+        <div class="md:hidden">
+            <button id="menuBtn" class="text-black">
+                <!-- Hamburger icon -->
+                <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Navigation links -->
+        <div id="navLinks" class="hidden md:flex gap-4">
+            <!-- Navigation items -->
+            <a href="" class="text-black-500">About</a>
+            <a href="" class="text-black-500">Clothing</a>
+            <a href="" class="text-black-500">Accessories</a>
+            <a href="" class="text-black-500">Services</a>
+        </div>
+
+        <!-- Login and Sign Up buttons -->
+        <div class="hidden md:flex gap-4">
+            <button class="text-black px-4 py-2 rounded-2xl"><a href="form.html">Login</a></button>
+            <button class="bg-orange-500 text-white px-10 py-2 rounded-2xl text-lg"><a href="form.html">Sign up</a></button>
+        </div>
+    </nav>
+
+    <!-- Main body -->
+    <div class="flex flex-col md:flex-row items-center justify-center gap-1 p-4 mx-auto">
+        <!-- Text and CTA section -->
+        <div class="m-4 md:m-24 inline-block">
+            <h1 class="text-cyan-500 py-1">TRIENDIEST FASHION EVER</h1>
+            <p class="font-mono py-7">When in doubt, wear Viss Fashions Denim</p>
+            <button class="bg-orange-500 text-white px-5 py-2 rounded-xl text-lg">Buy now</button>
+        </div>
+
+        <!-- Image section -->
+        <div class="m-4 md:m-28 inline-block">
+            <img src="images/main.jpg" alt="" width="600px" />
+        </div>
+    </div>
+
+    <!-- JavaScript for toggling navigation menu on small screens -->
+    <script>
+        document.getElementById('menuBtn').addEventListener('click', function () {
+            document.getElementById('navLinks').classList.toggle('hidden');
+        });
+    </script>
+
+</body>
+
+</html>

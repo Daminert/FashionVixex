@@ -1,0 +1,139 @@
+*{
+    padding :0;
+    margin :0;
+    box-sizing :border-box ;
+}
+
+body{
+    background:linear-gradient(to right,orange,brown);
+    width:100%;
+}
+
+.submit{
+    padding-top: 20px;
+}
+
+.mylog{
+    width:50px;
+    border-bottom-left-radius:30px ;
+    border-top-left-radius: 10px;    
+}
+
+.mylogin{
+    display :grid ;
+    grid-template-columns :1fr 1fr ;
+    margin-top:20%;
+    grid-column-gap: 0;
+    grid-row-gap: 0;
+}
+
+.main-form{
+    border:1px solid black ;
+    width:300px;
+    text-align :center ;
+    background-color :white ;
+    padding: 10px;
+    margin-left:40%;
+    border-top-left-radius :25px ;
+    border-bottom-left-radius :25px ;
+    font-family:sans-serif;
+}
+
+.services{
+    font-size :10px;
+    margin-bottom :20px ;
+}
+
+input{
+    padding:10px;
+    border-radius :15px ;
+    margin-bottom :10px ;
+    width :200px;
+}
+
+#names{
+    text-align: center;
+}
+
+.fa-facebook {
+    align-self: center;
+    position:relative ;
+    left:25px;
+    background-color :blue;
+    color :white ;
+    border-radius :10px ;
+}
+
+.fa-twitter {
+    align-self: center;
+    position:relative ;
+    left:25px;
+    color:blue;
+}
+
+.fa-google{
+    align-self: center;
+    position:relative ;
+    left:25px;
+    border-radius :10px ;
+    color :rgba(255,153,125,25,);
+}
+
+.fa-apple{
+    align-self: center;
+    position:relative ;
+    left:25px;
+    color :white;
+    border:1px solid black;
+    border-radius :60%;
+    background-color :black ;
+}
+
+.fa-mobile{
+    align-self: center;
+    position:relative ;
+    left:25px;
+}
+
+.fa-envelope{
+    align-self: center;
+    position:relative ;
+    left:25px;
+}
+
+.picture{
+    width :300px ;
+    border-top-right-radius :25px ;
+    border-bottom-right-radius :25px ; 
+}
+
+@media (max-width: 760px) {
+    body {
+        background: linear-gradient(to bottom, orange, brown);
+    }
+
+    .mylogin {
+        grid-template-columns: 1fr;
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+
+    .main-form {
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    .fa-facebook,
+    .fa-twitter,
+    .fa-google,
+    .fa-apple,
+    .fa-mobile,
+    .fa-envelope {
+        left: 0;
+    }
+
+    .picture {
+        width: 100%;
+        padding: 40px;
+    }
+}
